@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Heading = () => {
+const Heading = ({ children, className, small}) => {
   return (
-    <div>Heading</div>
+    <h2 className={`${className} text-white leading-[100%] uppercase ${small ? "text-[88px] font-bold" : "text-[138px] font-black"}`}>{children}</h2>
   )
 }
 

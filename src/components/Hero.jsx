@@ -1,8 +1,11 @@
 import React from 'react'
+import Cta from './common/Cta'
 
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <div>Hero
+        <Cta>Explore More</Cta>
+    </div>
   )
 }
 
