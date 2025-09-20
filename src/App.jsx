@@ -1,11 +1,9 @@
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Footer from './components/common/Footer'
 import Header from './components/common/Header'
-import Hero from './components/Hero'
-import NewCupCream from './components/NewCupCream'
-import OnSundaySpecial from './components/OnSundaySpecial'
-import OurtTopSelling from './components/OurtTopSelling'
-import WhyChooseUs from './components/WhyChooseUs'
+import Home from './Pages/Home'
+
 
 function App() {
 
@@ -13,12 +11,9 @@ function App() {
     <>
       <Header />
       <>
-        <Hero />
-        <NewCupCream />
-        <OurtTopSelling />
-        <OnSundaySpecial />
-        <WhyChooseUs />
-        <Footer />
+        <Routes>
+          <Route path='/' element={<Home />}/>
+        </Routes>
       </>
       <Footer />
     </>
